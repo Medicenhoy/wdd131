@@ -12,9 +12,11 @@ header {
     align-items: center;
 }
 
-h1 {
+h1, .header-title {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    font-size: 2rem; 
+    font-weight: bold;
 }
 
 #menu {
