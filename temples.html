@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 600px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+        <div class="grid-container">
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/salt-lake-temple/400x250/salt-lake-temple-766448.jpg" alt="Temple"><figcaption>Salt Lake Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/manti-utah-temple/400x250/manti-temple-766302.jpg" alt="Temple"><figcaption>Manti Utah Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/logan-utah-temple/400x250/logan-temple-766314.jpg" alt="Temple"><figcaption>Logan Utah Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/laie-hawaii-temple/400x250/laie-temple-772732.jpg" alt="Temple"><figcaption>Laie Hawaii Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/cardston-alberta-temple/400x250/cardston-alberta-temple-772731.jpg" alt="Temple"><figcaption>Cardston Alberta Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/mesa-arizona-temple/400x250/mesa-arizona-temple-772733.jpg" alt="Temple"><figcaption>Mesa Arizona Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/idaho-falls-idaho-temple/400x250/idaho-falls-temple-766312.jpg" alt="Temple"><figcaption>Idaho Falls Idaho Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/berne-switzerland-temple/400x250/berne-switzerland-temple-766304.jpg" alt="Temple"><figcaption>Berne Switzerland Temple</figcaption></figure>
+            <figure><img src="https://content.churchofjesuschrist.org/temples/photo-galleries/los-angeles-california-temple/400x250/los-angeles-temple-766309.jpg" alt="Temple"><figcaption>Los Angeles California Temple</figcaption></figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Eloy Martinez Cabello | Viamão, Rio Grande do Sul</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
