@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iguaçu National Park - Brazil</title>
+
+    <link rel="stylesheet" href="styles/place-base.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 800px)">
+    <script src="js/place.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Iguaçu National Park</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+                <img src="images/hero-small.webp" alt="Iguaçu Falls panorama">
+            </picture>
+        </section>
+
+        <section class="data card">
+            <h2>Data</h2>
+            <ul class="details">
+                <li><strong>Area:</strong> 185,262 hectares</li>
+                <li><strong>State:</strong> Paraná</li>
+                <li><strong>Country:</strong> Brazil</li>
+                <li><strong>Established:</strong> 1939</li>
+                <li><strong>Visitor Center:</strong> Yes</li>
+                <li><strong>UNESCO World Heritage:</strong> 1986</li>
+            </ul>
+        </section>
+
+        <section class="weather card">
+            <h2>Weather</h2>
+
+            <div class="weather-icon-mobile">
+                <img src="images/weather-icon.svg" alt="Sunny with mist" width="50">
+            </div>
+
+            <ul class="details">
+                <li><strong>Temperature:</strong> <span id="temp">8</span> °C</li>
+                <li><strong>Conditions:</strong> Sunny Mist</li>
+                <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Eloy Francisco Martinez Cabello | Viamão, Brazil</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
