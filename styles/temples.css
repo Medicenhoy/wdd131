@@ -68,28 +68,42 @@ main {
     padding: 1rem;
 }
 
-.grid-container {
+#res-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-figure {
+section {
     margin: 0;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 
-img {
+section img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-figcaption {
-    padding: 10px;
+section h3 {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    margin: 15px 0 5px 0;
+    color: #2c3e50;
+}
+
+section p {
+    text-align: center;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+.label {
     font-weight: bold;
+    color: #3498db;
 }
 
 footer {
