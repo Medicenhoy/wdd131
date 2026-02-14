@@ -4,42 +4,42 @@ const healthTips = [
         title: "Stay Hydrated",
         category: "nutrition",
         description: "Drinking water before meals can help you feel fuller.",
-        image: "images/food.png"
+        image: "images/food.webp"
     },
     {
         id: 2,
         title: "Morning Stretch",
         category: "exercise",
         description: "Start your day with 5 minutes of stretching to improve blood flow.",
-        image: "images/run.png"
+        image: "images/run.webp"
     },
     {
         id: 3,
         title: "Mindful Breathing",
         category: "mind",
         description: "Take deep breaths for 2 minutes to reduce cortisol levels.",
-        image: "images/mind.png"
+        image: "images/mind.webp"
     },
     {
         id: 4,
         title: "Eat More Fiber",
         category: "nutrition",
         description: "Fiber helps maintain bowel health and lowers cholesterol.",
-        image: "images/food.png"
+        image: "images/food.webp"
     },
     {
         id: 5,
         title: "Walk Daily",
         category: "exercise",
         description: "A 30-minute walk can significantly improve heart health.",
-        image: "images/run.png"
+        image: "images/run.webp"
     },
     {
         id: 6,
         title: "Digital Detox",
         category: "mind",
         description: "Disconnect from screens 1 hour before bed for better sleep.",
-        image: "images/mind.png"
+        image: "images/mind.webp"
     }
 ];
 
