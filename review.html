@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            let count = localStorage.getItem("reviewCount");
+
+            if (!count) {
+                count = 0;
+            }
+
+            count++;
+
+            localStorage.setItem("reviewCount", count);
+
+            document.getElementById("counter").textContent = count;
+        });
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>Thank You</h1>
+</header>
+
+<main>
+    <p>Your review has been submitted successfully.</p>
+
+    <p>Total reviews submitted: <strong id="counter"></strong></p>
+
+    <a href="form.html">Submit another review</a>
+</main>
+
+<footer>
+    <p>&copy; 2026 | Eloy Martinez | WDD131</p>
+</footer>
+
+</body>
+</html>

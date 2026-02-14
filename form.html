@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Product Review</h1>
+</header>
+
+<main>
+    <form method="get" action="review.html">
+
+        <div class="form-group">
+            <label for="productName">Product Name *</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Overall Rating *</legend>
+
+            <label>
+                <input type="radio" name="rating" value="1" required>
+                ☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="2">
+                ☆☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="3">
+                ☆☆☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="4">
+                ☆☆☆☆
+            </label>
+
+            <label>
+                <input type="radio" name="rating" value="5">
+                ☆☆☆☆☆
+            </label>
+
+        </fieldset>
+
+        <div class="form-group">
+            <label for="installDate">Date of Installation *</label>
+            <input type="date" id="installDate" name="installDate" required>
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Useful Features</legend>
+
+            <label>
+                <input type="checkbox" id="speed" name="features" value="speed">
+                Fast performance
+            </label>
+
+            <label>
+                <input type="checkbox" id="design" name="features" value="design">
+                Good design
+            </label>
+
+            <label>
+                <input type="checkbox" id="easy" name="features" value="easy">
+                Easy to use
+            </label>
+
+            <label>
+                <input type="checkbox" id="support" name="features" value="support">
+                Good support
+            </label>
+
+        </fieldset>
+
+        <div class="form-group">
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit Review">
+        </div>
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 | Eloy Martinez | WDD131</p>
+</footer>
+
+</body>
+</html>

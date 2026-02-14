@@ -1,0 +1,72 @@
+:root {
+    --primary: #0077b6;
+    --secondary: #f8f9fa;
+    --accent: #023e8a;
+    --text: #333;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--secondary);
+    color: var(--text);
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.3rem 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary);
+}
