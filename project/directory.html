@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medora - Directory</title>
+    <meta name="description" content="Browse our complete directory of health and wellness tips.">
+    <meta name="author" content="Eloy Martinez">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Medora</div>
+        <button id="hamburger" aria-label="Menu">☰</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Tips Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Health Tips Directory</h2>
+        <div class="filters">
+            <button id="filter-all">All</button>
+            <button id="filter-nutrition">Nutrition</button>
+            <button id="filter-exercise">Exercise</button>
+            <button id="filter-mind">Mental Health</button>
+        </div>
+        
+        <div id="directory-grid" class="grid-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Medora Project | Eloy Martinez</p>
+        <p><a href="reference.html">References</a></p>
+    </footer>
+</body>
+</html>

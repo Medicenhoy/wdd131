@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medora - Join Us</title>
+    <meta name="description" content="Subscribe to our newsletter.">
+    <meta name="author" content="Eloy Martinez">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Medora</div>
+        <button id="hamburger" aria-label="Menu">☰</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Tips Directory</a></li>
+                <li><a href="join.html" class="active">Join Us</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join Our Community</h2>
+        <p>Subscribe to receive weekly health tips tailored for you.</p>
+
+        <form id="join-form" method="get" action="thankyou.html">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" required placeholder="Your name">
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+            <label for="goal">Primary Goal</label>
+            <select id="goal" name="goal">
+                <option value="" disabled selected>Select a goal...</option>
+                <option value="lose-weight">Weight Loss</option>
+                <option value="gain-muscle">Muscle Gain</option>
+                <option value="mental-health">Reduce Stress</option>
+                <option value="general">General Health</option>
+            </select>
+
+            <input type="submit" value="Join Now" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Medora Project | Eloy Martinez</p>
+        <p><a href="reference.html">References</a></p>
+    </footer>
+</body>
+</html>

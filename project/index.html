@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medora - Daily Health</title>
+    <meta name="description" content="Medora provides daily health tips, nutrition advice, and mental wellness resources.">
+    <meta name="author" content="Eloy Martinez">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Medora</div>
+        <button id="hamburger" aria-label="Menu">☰</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Tips Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero.png">
+                <img src="images/hero.png" alt="Healthy lifestyle and wellness" loading="eager" width="1000" height="400">
+            </picture>
+            <div class="hero-text">
+                <h1>Welcome to Medora</h1>
+                <p>Your journey to a healthier life starts with a single step.</p>
+                <a href="join.html" class="cta-button">Get Started</a>
+            </div>
+        </div>
+
+        <section class="featured-section">
+            <h2>Today's Highlight</h2>
+            <div id="featured-tip"></div>
+        </section>
+
+        <section class="info-grid">
+            <div class="card">
+                <h3>Nutrition</h3>
+                <img src="images/food.png" alt="Healthy food" loading="lazy" width="300" height="200">
+                <p>Discover recipes that fuel your body.</p>
+            </div>
+            <div class="card">
+                <h3>Mental Health</h3>
+                <img src="images/mind.png" alt="Meditation" loading="lazy" width="300" height="200">
+                <p>Find peace in a busy world.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Medora Project | Eloy Martinez</p>
+        <p><a href="reference.html">References</a></p>
+    </footer>
+</body>
+</html>
