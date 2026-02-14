@@ -44,10 +44,10 @@ header {
     font-weight: bold;
 }
 
-.primary { background-color: #0077B6; color: white; }
-.secondary { background-color: #CAF0F8; color: #333; }
-.accent { background-color: #023E8A; color: white; }
-.text { background-color: #333333; color: white; }
+.primary { background-color: var(--primary-color); color: white; }
+.secondary { background-color: var(--secondary-color); color: var(--text-color); }
+.accent { background-color: var(--accent-color); color: white; }
+.text { background-color: var(--text-color); color: white; }
 
 .wireframes {
     display: flex;
@@ -56,8 +56,12 @@ header {
     justify-content: center;
 }
 
+.wf-mobile, .wf-desktop {
+    flex: 1 1 300px;
+}
+
 .wireframes img {
-    border: 1px solid #333;
+    border: 1px solid var(--text-color);
     max-width: 100%;
     height: auto;
     display: block;
