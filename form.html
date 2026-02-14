@@ -7,7 +7,6 @@
     <meta name="description" content="Submit a product review by selecting a product, rating it, and sharing your experience.">
     <meta name="author" content="Eloy Martinez">
     <link rel="stylesheet" href="styles/form.css">
-
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
@@ -27,35 +26,34 @@
         </div>
 
         <fieldset class="form-group">
+            <legend>Overall Rating *</legend>
 
-  <legend>Overall Rating *</legend>
+            <label for="rating1">
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                ☆
+            </label>
 
-  <label for="rating1">
-    <input type="radio" id="rating1" name="rating" value="1" required>
-    ☆
-  </label>
+            <label for="rating2">
+                <input type="radio" id="rating2" name="rating" value="2" required>
+                ☆☆
+            </label>
 
-  <label for="rating2">
-    <input type="radio" id="rating2" name="rating" value="2" required>
-    ☆☆
-  </label>
+            <label for="rating3">
+                <input type="radio" id="rating3" name="rating" value="3" required>
+                ☆☆☆
+            </label>
 
-  <label for="rating3">
-    <input type="radio" id="rating3" name="rating" value="3" required>
-    ☆☆☆
-  </label>
+            <label for="rating4">
+                <input type="radio" id="rating4" name="rating" value="4" required>
+                ☆☆☆☆
+            </label>
 
-  <label for="rating4">
-    <input type="radio" id="rating4" name="rating" value="4" required>
-    ☆☆☆☆
-  </label>
+            <label for="rating5">
+                <input type="radio" id="rating5" name="rating" value="5" required>
+                ☆☆☆☆☆
+            </label>
 
-  <label for="rating5">
-    <input type="radio" id="rating5" name="rating" value="5" required>
-    ☆☆☆☆☆
-  </label>
-
-</fieldset>
+        </fieldset>
 
         <div class="form-group">
             <label for="installDate">Date of Installation *</label>
@@ -65,22 +63,22 @@
         <fieldset class="form-group">
             <legend>Useful Features</legend>
 
-            <label>
+            <label for="speed">
                 <input type="checkbox" id="speed" name="features" value="speed">
                 Fast performance
             </label>
 
-            <label>
+            <label for="design">
                 <input type="checkbox" id="design" name="features" value="design">
                 Good design
             </label>
 
-            <label>
+            <label for="easy">
                 <input type="checkbox" id="easy" name="features" value="easy">
                 Easy to use
             </label>
 
-            <label>
+            <label for="support">
                 <input type="checkbox" id="support" name="features" value="support">
                 Good support
             </label>
