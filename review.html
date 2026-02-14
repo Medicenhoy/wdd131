@@ -5,24 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Submitted</title>
 
+    <meta name="description" content="Confirmation page after submitting a product review.">
+    <meta name="author" content="Eloy Martinez">
+
     <link rel="stylesheet" href="styles/form.css">
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            let count = localStorage.getItem("reviewCount");
-
-            if (!count) {
-                count = 0;
-            }
-
-            count++;
-
-            localStorage.setItem("reviewCount", count);
-
-            document.getElementById("counter").textContent = count;
-        });
-    </script>
+    <script src="scripts/review.js" defer></script>
 
 </head>
 <body>
@@ -32,11 +20,13 @@
 </header>
 
 <main>
+
     <p>Your review has been submitted successfully.</p>
 
-    <p>Total reviews submitted: <strong id="counter"></strong></p>
+    <p>Total reviews submitted: <strong id="counter">0</strong></p>
 
     <a href="form.html">Submit another review</a>
+
 </main>
 
 <footer>
